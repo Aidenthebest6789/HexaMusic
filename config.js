@@ -1,10 +1,10 @@
 
 
 module.exports = {
-  TOKEN: "mongodb+srv://89hostingservice1:hexamusic@hexamusic.yytf6.mongodb.net/?retryWrites=true&w=majority&appName=HexaMusic",
+  TOKEN: "",
   language: "en",
   ownerID: ["1180993418479013928", ""], 
-  mongodbUri : "",
+  mongodbUri : "mongodb+srv://89hostingservice1:hexamusic@hexamusic.yytf6.mongodb.net/?retryWrites=true&w=majority&appName=HexaMusic",
   spotifyClientId : "",
   spotifyClientSecret : "",
   setupFilePath: './commands/setup.json',
