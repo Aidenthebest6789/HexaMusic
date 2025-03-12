@@ -1,7 +1,7 @@
 
 
 module.exports = {
-  TOKEN: "",
+  TOKEN: "mongodb+srv://89hostingservice1:hexamusic@hexamusic.yytf6.mongodb.net/?retryWrites=true&w=majority&appName=HexaMusic",
   language: "en",
   ownerID: ["1180993418479013928", ""], 
   mongodbUri : "",
