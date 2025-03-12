@@ -16,7 +16,7 @@ async function playCustomPlaylist(client, interaction, lang) {
                     iconURL: musicIcons.alertIcon,
                     url: config.SupportServer
                 })
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: "HexaBot Music", iconURL: musicIcons.heartIcon })
                 .setDescription(lang.playCustomPlaylist.embed.noVoiceChannel);
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
@@ -32,7 +32,7 @@ async function playCustomPlaylist(client, interaction, lang) {
                     iconURL: musicIcons.alertIcon,
                     url: config.SupportServer
                 })
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: "HexaBot Music", iconURL: musicIcons.heartIcon })
                 .setDescription(lang.playCustomPlaylist.embed.playlistNotFound);
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
@@ -47,7 +47,7 @@ async function playCustomPlaylist(client, interaction, lang) {
                     iconURL: musicIcons.alertIcon,
                     url: config.SupportServer
                 })
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: "HexaBot Music", iconURL: musicIcons.heartIcon })
                 .setDescription(lang.playCustomPlaylist.embed.noPermission);
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
@@ -62,7 +62,7 @@ async function playCustomPlaylist(client, interaction, lang) {
                     iconURL: musicIcons.alertIcon,
                     url: config.SupportServer
                 })
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: "HexaBot Music", iconURL: musicIcons.heartIcon })
                 .setDescription(lang.playCustomPlaylist.embed.emptyPlaylist);
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
@@ -98,7 +98,7 @@ async function playCustomPlaylist(client, interaction, lang) {
                         iconURL: musicIcons.alertIcon,
                         url: config.SupportServer
                     })
-                    .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                    .setFooter({ text: "HexaBot Music", iconURL: musicIcons.heartIcon })
                     .setDescription(lang.playCustomPlaylist.embed.errorResolvingSong);
 
                 await interaction.editReply({ embeds: [errorEmbed] });
@@ -116,7 +116,7 @@ async function playCustomPlaylist(client, interaction, lang) {
                 url: config.SupportServer
             })
             .setDescription(lang.playCustomPlaylist.embed.playlistPlaying.replace("{playlistName}", playlistName))
-            .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon });
+            .setFooter({ text: "HexaBot Music", iconURL: musicIcons.heartIcon });
 
         await interaction.followUp({ embeds: [embed] });
 
@@ -129,7 +129,7 @@ async function playCustomPlaylist(client, interaction, lang) {
                 iconURL: musicIcons.alertIcon,
                 url: config.SupportServer
             })
-            .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+            .setFooter({ text: "HexaBot Music", iconURL: musicIcons.heartIcon })
             .setDescription(lang.playCustomPlaylist.embed.errorPlayingPlaylist);
 
         if (interaction.deferred || interaction.replied) {
