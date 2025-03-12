@@ -14,7 +14,7 @@ async function filters(client, interaction, lang) {
                     iconURL: musicIcons.alertIcon,
                     url: config.SupportServer
                 })
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: "HexaBot Music", iconURL: musicIcons.heartIcon })
                 .setDescription(lang.filters.embed.noPlayer);
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
@@ -29,7 +29,7 @@ async function filters(client, interaction, lang) {
                     iconURL: musicIcons.alertIcon,
                     url: config.SupportServer
                 })
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: "HexaBot Music", iconURL: musicIcons.heartIcon })
                 .setDescription(lang.filters.embed.wrongChannel);
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
