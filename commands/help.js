@@ -55,7 +55,7 @@ module.exports = {
             }).join('\n') || lang.help.embed.noCommands
           }
         )
-        .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+        .setFooter({ text: "HexaBot Music", iconURL: musicIcons.heartIcon })
         .setTimestamp();
 
       return interaction.reply({ embeds: [embed] });
